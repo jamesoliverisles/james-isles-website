@@ -161,7 +161,7 @@ function closeFullscreen() {
       returnPage = "../pages/books-prints.html";
       break;
     case "work":
-      returnPage = "../pages/index.html";
+      returnPage = "../index.html";
       break;
 
     default:
