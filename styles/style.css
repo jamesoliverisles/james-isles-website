@@ -391,7 +391,6 @@ img:hover {
    Thesis Page
    =============================== */
 
-/* Thesis Content Styling */
 .thesis-content {
   margin-left: 240px;
   padding-left: 20px;
@@ -399,12 +398,6 @@ img:hover {
   margin-right: 20px;
   width: calc(100% - 240px);
   box-sizing: border-box;
-
-  @media only screen and (max-width: 600px) {
-    margin: 0;
-    padding: 1em;
-    width: 100%;
-  }
 }
 /* FIX: full-width thesis on mobile */
 @media only screen and (max-width: 600px) {
