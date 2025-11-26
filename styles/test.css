@@ -1,0 +1,178 @@
+
+/* Content Styling for Illustrations */
+.books-prints-content {
+  margin-left: 240px;
+  padding-left: 20px;
+  /* padding-top: 49px; */
+  margin-top: 49px;
+  margin-right: 20px;
+  width: calc(100% - 240px);
+  box-sizing: border-box;
+}
+
+/* Books Gallery Grid */
+.books-gallery {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); /* 3 equal-width columns */
+  gap: 22px; /* Spacing between items */
+  width: 95%; /* Maintain border distance */
+  margin: 0 auto; /* Center the gallery */
+  /* margin-bottom: 49px; */
+}
+
+/* Individual Illustration Item */
+.book-item {
+  width: 100%; /* Full width of the grid cell */
+  height: auto; /* Maintain aspect ratio */
+  /* border-radius: 5px; Optional: Rounded corners */
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); Optional: Subtle shadow */
+}
+
+
+
+
+
+
+
+
+/* Sidebar Styling */
+.sidebar {
+  width: 220px;
+  position: fixed;
+  height: 100vh;
+  background-color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Push bottom links to the bottom */
+  border-right: 1px solid #ddd;
+}
+
+/* Logo Styling */
+.logo img {
+  width: 80%;
+  margin-bottom: 20px;
+}
+
+/* Top Links */
+.top-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.top-links ul li {
+  margin-bottom: 10px;
+}
+
+.top-links ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+}
+
+.top-links ul li a.active,
+.top-links ul li a:hover {
+  color: red;
+}
+
+/* Bottom Links */
+.bottom-links {
+  margin-top: auto; /* Push this section to the bottom */
+}
+
+.bottom-links ul {
+  list-style: none;
+  padding: 0;
+  /* margin-bottom: 10px; */
+}
+
+.bottom-links ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+}
+
+.bottom-links ul li a:hover {
+  color: red;
+}
+
+/* Instagram Icon */
+.instagram-logo img {
+  width: 24px;
+  margin-top: 10px;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  font-family: Arial, sans-serif;
+}
+
+
+/* Logo */
+.logo img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* Instagram Logo */
+.instagram-logo img {
+  width: 24px;
+}
+
+
+
+/*
+**
+**
+Work Page Content CSS
+**
+**
+*/
+/* Content Styling */
+.content {
+  margin-left: 240px;
+  padding: 20px;
+  width: calc(100% - 240px);
+}
+
+/* Year Section Styling */
+.year-section {
+  margin-bottom: 40px;
+}
+
+.year-section h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Updated Image Grid */
+.image-grid {
+  display: grid; /* Use CSS Grid for layout */
+  grid-template-columns: repeat(2, 1fr); /* Two columns */
+  gap: 20px; /* Space between images */
+  align-items: start; /* Align items to the top of each row */
+}
+
+.image-item {
+  width: 100%; /* Take full width of the grid column */
+}
+
+.image-item img {
+  width: 100%; /* Make images responsive and fill their container */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 5px; /* Optional: Rounded corners */
+}
+
+.caption {
+  text-align: center;
+  font-size: 14px;
+  color: #555;
+  margin-top: 10px;
+}

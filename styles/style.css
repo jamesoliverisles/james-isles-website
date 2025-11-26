@@ -1,0 +1,769 @@
+body {
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  box-sizing: border-box; /* Ensure consistent box model */
+  width: 100%; /* Ensure the body takes full width */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  @media only screen and (max-width: 600px) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+
+/* Global Hover Effect for Images */
+img:hover {
+  transform: scale(1.01); /* Slight enlargement */
+  transition: transform 0.3s ease; /* Smooth scaling */
+}
+
+
+
+/* Sidebar Styling */
+.sidebar {
+  width: 220px;
+  position: fixed;
+  height: 100vh;
+  background-color: white;
+  padding: 49px 47px 47px 47px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Push bottom links to the bottom */
+  transition: width 0.3s ease, padding 0.3s ease;
+  box-sizing: border-box;
+  /* border-right: 1px solid #ddd; */
+  @media only screen and (max-width: 600px) {
+    padding: 2em;
+    height: auto;
+    position:relative;
+  }
+}
+
+
+/* Logo Styling */
+.logo img {
+  width: 80%;
+  margin-bottom: 20px;
+  transform: none;
+}
+
+
+/* Top Links */
+.top-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.top-links ul li {
+  margin-bottom: 10px;
+}
+
+.top-links ul li a {
+  text-decoration: none;
+  color: #1C1440;
+  font-size: 16px;
+}
+
+.top-links ul li a.active{
+  color: #AA0909;
+}
+
+.top-links ul li a:hover {
+  color: #4BA7BE;
+}
+
+/* Bottom Links */
+.bottom-links {
+  margin-bottom: auto; /* Push this section to the bottom */
+  margin-top: 39px;
+}
+
+.bottom-links ul {
+  list-style: none;
+  padding: 0;
+  /* margin-bottom: 10px; */
+}
+
+.bottom-links ul li a {
+  text-decoration: none;
+  color: #1C1440;
+  font-size: 16px;
+}
+
+.bottom-links ul li a:hover {
+  color: #4BA7BE;
+}
+
+.bottom-links ul li a.active{
+  color: #AA0909;
+}
+
+/* Instagram Icon */
+.instagram-logo img {
+  width: 17px;
+  margin-top: 10px;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  color: #1C1440;
+  /* font-family: Arial, sans-serif; */
+  /* @media only screen and (max-width: 600px) {
+    flex-direction: column;
+  } */
+   
+}
+
+
+/* Logo */
+.logo img {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+
+
+
+/*
+**
+**
+Work Page Content CSS
+**
+**
+*/
+/* Content Styling */
+.content {
+  margin-left: 240px;
+  padding: 20px;
+  width: calc(100% - 240px);
+  @media only screen and (max-width: 600px) {
+    margin: 0;
+    width: 100%;
+    padding: 1em;
+  }
+}
+
+/* Year Section Styling */
+.year-section {
+  margin-bottom: 40px;
+}
+
+.year-section h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.image-container {
+  /* max-width: 1224px; */
+  width: 95%;
+  margin: auto;
+  
+  padding: 40px 0;
+  @media only screen and (max-width: 600px) {
+    padding: 1em 0;
+  }
+}
+
+.year-title {
+  margin-bottom: 2rem;
+  font-size: 20px;
+}
+
+.image-gallery {
+  display: flex;
+  gap: 20px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  width: 100%;
+}
+
+.caption {
+  margin-top: 11px;
+  font-size: 16px;
+  /* margin-bottom: 22px; */
+}
+
+.image-item{
+  text-align: center;
+  margin-bottom: 33px;
+}
+
+.image-item img {
+  width: 100%;
+  height: 100%;
+  /* object-fit: cover; */
+}
+
+@media(max-width: 768px){
+  .image-gallery{
+    flex-direction:column;
+  }
+}
+
+
+
+/* Illustration.html css */
+
+/* Content Styling for Illustrations */
+.illustration-content {
+  margin-left: 240px;
+  padding-left: 20px;
+  /* padding-top: 49px; */
+  margin-top: 49px;
+  margin-right: 20px;
+  width: calc(100% - 240px);
+  box-sizing: border-box;
+  @media only screen and (max-width: 600px) {
+    margin: 0;
+    width: 100%;
+  }
+}
+
+/* Illustration Gallery Grid */
+.illustration-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 equal-width columns */
+  gap: 22px; /* Spacing between items */
+  width: 95%; /* Maintain border distance */
+  margin: 0 auto; /* Center the gallery */
+  margin-bottom: 49px;
+}
+
+/* Individual Illustration Item */
+.illustration-item {
+  width: 100%; /* Full width of the grid cell */
+  min-width: none; /* can modify this later if want at least certain size */
+  height: auto; /* Maintain aspect ratio */
+  /* border-radius: 5px; Optional: Rounded corners */
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); Optional: Subtle shadow */
+}
+
+/* Wide Illustration Item */
+.illustration-item.wide {
+  grid-column: span 2; /* Spans the first two columns */
+}
+
+/* 2 columns */
+@media (max-width: 1024px) {
+  .illustration-gallery{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Responsive Design: One Column on Small Screens */
+@media (max-width: 768px) {
+  .illustration-gallery {
+    grid-template-columns: 1fr; /* Single column */
+  }
+}
+
+/* 
+*
+books-prints.html css styles
+*
+*/
+
+/* Content Styling for Books & Prints */
+.books-prints-content {
+  margin-left: 240px;
+  padding-left: 20px;
+  margin-top: 49px;
+  margin-right: 20px;
+  width: calc(100% - 240px);
+  box-sizing: border-box;
+  @media only screen and (max-width: 600px) {
+    margin: 0;
+    width: 100%;
+  }
+}
+
+/* Books Gallery */
+.books-gallery {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); /* One item per row */
+  gap: 22px; /* Spacing between items */
+  width: 95%;
+  margin: 0 auto; /* Center the gallery */
+}
+
+/* Individual Book Item */
+.book-item {
+  position: relative;
+  display: block;
+  overflow: visible; /* Allow image and overlay to expand beyond container */
+  border-radius: 5px; /* Optional rounded corners */
+}
+
+/* Book Item Image */
+.book-item img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.2s ease; /* Smooth scaling */
+}
+
+/* Hover Effect for Images */
+.book-item:hover img {
+  transform: scale(1.01); /* Image enlarges slightly beyond its container */
+}
+
+/* Semi-transparent White Overlay */
+.book-item::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0); /* Fully transparent by default */
+  transition: transform 0.2s ease, background-color 0.2s ease; /* Smooth scaling and fade-in */
+  z-index: 1; /* Place it above the image */
+}
+
+/* Add Opacity and Sync Size on Hover */
+.book-item:hover::after {
+  background-color: rgba(255, 255, 255, 0.7); /* 70% white opacity */
+  transform: scale(1.01); /* Match the image scaling on hover */
+}
+
+/* Overlay Text Styling */
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 44px; /* Larger text for better visibility */
+  font-weight: bold;
+  color: #1C1440; /* Dark text for contrast */
+  text-align: center;
+  opacity: 0; /* Hidden by default */
+  transition: opacity 0.2s ease; /* Smooth fade-in effect */
+  font-family: 'Anaheim', sans-serif;
+  z-index: 2; /* Ensure text appears above the white overlay */
+}
+
+/* Show Text on Hover */
+.book-item:hover .overlay-text {
+  opacity: 1; /* Text becomes visible on hover */
+}
+
+
+
+
+
+
+/*
+*
+about.html css
+*
+*/
+
+
+/* Content Styling for Illustrations */
+.about-content {
+  margin-left: 240px;
+  padding-left: 20px;
+  /* padding-top: 49px; */
+  margin-top: 49px;
+  margin-right: 20px;
+  width: calc(100% - 240px);
+  box-sizing: border-box;
+  font-size: 16px;
+  @media only screen and (max-width: 600px) {
+    margin: 0;
+    width: 100%;
+    padding: 0;
+  }
+}
+
+.about-container {
+  /* max-width: 1224px; */
+  width: 95%;
+  margin: auto;
+  
+  padding: 40px 0;
+
+}
+
+/* Books Gallery Grid */
+.about-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 3 equal-width columns */
+  gap: 22px; /* Spacing between items */
+  width: 95%; /* Maintain border distance */
+  margin: 0 auto; /* Center the gallery */
+  align-items: start;
+  margin-bottom: 49px;
+  @media only screen and (max-width: 600px) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.about-gallery img{
+  /* transform: scale(0.6); */
+  /* height: 70%; */
+  /* width: 300px;
+  height: auto; */
+}
+
+
+/*
+*
+thesis.html style
+*
+*/
+
+/* Thesis Content Styling */
+.thesis-content {
+  margin-left: 240px;
+  padding-left: 20px;
+  margin-top: 49px;
+  margin-right: 20px;
+  width: calc(100% - 240px);
+  box-sizing: border-box;
+}
+
+/* Thesis Grid Styling */
+.thesis-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 equal-width columns */
+  gap: 22px; /* Spacing between items */
+  width: 95%;
+  margin: 0 auto; /* Center the gallery */
+}
+
+
+/* Individual thesis top (overall) Item */
+.thesis-top-item {
+  position: relative;
+  display: block;
+  overflow: visible; /* Allow image and overlay to expand beyond container */
+  border-radius: 5px; /* Optional rounded corners */
+}
+
+.thesis-top-item img {
+  width: 100%;
+  height: auto;
+  transform: none;
+}
+
+
+/* Individual Thesis Image Item */
+.thesis-item {
+  position: relative;
+  overflow: visible; /* Allow hover effects to extend */
+  border-radius: 5px; /* Optional rounded corners */
+  transition: transform 0.2s ease; /* Smooth scaling */
+}
+
+/* Thesis Image */
+.thesis-item img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease; /* Smooth scaling */
+}
+
+/* 2 columns */
+@media (max-width: 1024px) {
+  .thesis-gallery{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Responsive Design: One Column on Small Screens */
+@media (max-width: 768px) {
+  .thesis-gallery {
+    grid-template-columns: 1fr; /* Single column */
+  }
+}
+
+
+/* for full screen closing */
+/* Fullscreen Content Layout */
+.fullscreen-content {
+  margin: 0 auto; /* Center the content */
+  margin-left: 240px; /* Respect sidebar width */
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center vertically */
+  padding: 0;
+  padding-top: 49px; /* Match content's starting point */
+  width: 100%; /* Ensure full width */
+  height: 100vh;
+  box-sizing: border-box;
+  @media only screen and (max-width: 600px) {
+    height: 100%;
+    padding: 0;
+    margin-left: 0;
+  }
+}
+
+
+.fullscreen-content {
+  
+  margin-left: 240px;
+  padding: 0; /* Remove extra padding */
+  
+  
+  
+  
+  box-sizing: border-box;
+  @media only screen and (max-width: 600px) {
+    height: 100%;
+    padding: 0;
+    margin-left: 0;
+  }
+}
+
+
+
+/* Artwork Container */
+.artwork-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; /* Space between arrows and image */
+  width: calc(100% - 260px); /* Account for sidebar spacing */
+}
+
+/* Artwork Fullscreen Image */
+.artwork-fullscreen {
+  position: relative; /* To position the close button */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+}
+
+.artwork-fullscreen img {
+  max-width: 100%;
+  max-height: calc(100vh - 49px); /* Prevent the image from overflowing vertically */
+  object-fit: contain; /* Maintain aspect ratio */
+  cursor: auto;
+  min-width: 300px; /* Minimum width for smaller screens */
+  min-height: 300px; /* Minimum height for smaller screens */
+}
+
+/* Navigation Arrows */
+.nav-arrow {
+  font-size: 24px;
+  font-weight: bold;
+  color: #1C1440;
+  background: none;
+  border: none;
+  cursor: pointer;
+  visibility: visible; /* Default visibility */
+  opacity: 1; /* Default opacity */
+  
+  /* transition: color 0.3s ease; */
+}
+
+.nav-arrow.hidden {
+  visibility: hidden; /* Hide the arrow but keep its space */
+  opacity: 0; /* Optional: Smooth fade-out effect */
+}
+
+.nav-arrow:hover {
+  color: #4BA7BE; /* Match sidebar hover color */
+}
+
+.left-arrow {
+  align-self: center; /* Vertically align with image */
+}
+
+.right-arrow {
+  align-self: center; /* Vertically align with image */
+}
+
+#artwork-image {
+  transform: none;
+  transition: opacity 0.9s ease-in-out;
+}
+
+
+/*
+
+Zine
+
+*/
+
+/* Zine Content Styling */
+.zine-content {
+  margin-left: 240px;
+  padding-left: 20px;
+  margin-right: 20px;
+  margin-top: 49px;
+  width: calc(100% - 240px);
+  box-sizing: border-box;
+}
+
+.zine-top-item {
+  position: relative;
+  display: block;
+  overflow: visible; /* Allow image and overlay to expand beyond container */
+
+}
+
+.zine-top-item img {
+  width: 100%;
+  height: auto;
+  transform: none;
+}
+
+.zine-top-gallery {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); /* One item per row */
+  gap: 22px; /* Spacing between items */
+  width: 95%;
+  margin: 0 auto; /* Center the gallery */
+}
+
+/* Zine Bottom Grid Styling */
+.zine-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 equal-width columns */
+  gap: 22px; /* Spacing between items */
+  width: 95%;
+  margin: 0 auto; /* Center the gallery */
+}
+
+/* Individual Zine Image Item */
+.zine-item {
+  position: relative;
+  overflow: visible; /* Allow hover effects to extend */
+  border-radius: 5px; /* Optional rounded corners */
+  transition: transform 0.2s ease; /* Smooth scaling */
+}
+
+/* Thesis Image */
+.zine-item img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease; /* Smooth scaling */
+}
+
+/* 2 columns */
+@media (max-width: 1024px) {
+  .zine-gallery{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Responsive Design: One Column on Small Screens */
+@media (max-width: 768px) {
+  .zine-gallery {
+    grid-template-columns: 1fr; /* Single column */
+  }
+}
+
+
+/*
+
+Children's Book (Coco) style
+
+*/
+
+.coco-content {
+  margin-left: 240px;
+  padding-left: 20px;
+  margin-right: 20px;
+  margin-top: 49px;
+  width: calc(100% - 240px);
+  box-sizing: border-box;
+}
+
+.coco-top-item {
+  position: relative;
+  display: flex; /* flexbox for alignment */
+  justify-content: center; /* horizontally center
+  /* use align-items for vertical if needed */
+  overflow: visible; /* Allow image and overlay to expand beyond container */
+  margin-bottom: 74px;
+}
+
+.coco-top-item img {
+  width: 45%;
+  /* min-width: 160px; */
+  height: auto;
+  margin: 0 auto;
+  transform: none;
+
+}
+
+/* Expand to 100% width for smaller screens */
+@media (max-width: 768px) {
+  .coco-top-item img {
+    width: 100%;
+  }
+}
+
+/* Further customization for very small screens, if needed */
+@media (max-width: 480px) {
+  .coco-top-item img {
+    width: 100%; /* Maintain full width */
+    padding: 10px; /* Optional padding for spacing */
+  }
+}
+
+/* Children's Book Bottom Grid Styling */
+.coco-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 3 equal-width columns */
+  gap: 22px; /* Spacing between items */
+  width: 95%;
+  margin: 0 auto; /* Center the gallery */
+}
+
+/* Individual Zine Image Item */
+.coco-item {
+  position: relative;
+  overflow: visible; /* Allow hover effects to extend */
+  border-radius: 5px; /* Optional rounded corners */
+  transition: transform 0.2s ease; /* Smooth scaling */
+}
+
+/* Thesis Image */
+.coco-item img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease; /* Smooth scaling */
+}
+
+/* 2 columns */
+@media (max-width: 1024px) {
+  .coco-gallery{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Responsive Design: One Column on Small Screens */
+@media (max-width: 768px) {
+  .coco-gallery {
+    grid-template-columns: 1fr; /* Single column */
+  }
+}
+
+
+/* Adjust font size for smaller screens */
+@media (max-width: 768px) {
+  .overlay-text {
+    font-size: 28px; /* Smaller font for medium screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .overlay-text {
+    font-size: 16px; /* Smallest font for very small screens */
+  }
+}
