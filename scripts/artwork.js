@@ -66,13 +66,13 @@ const galleries = {
     { id: "work5.2", src: "../assets/images/work/work5.2.jpg"},
 
      { id: "a-lone-man-wandering-in-a-piece-of-tape", src: "../assets/images/work/a-lone-man-wandering-in-a-piece-of-tape.jpg"},
-    { id: "bubblewrap1", src: "../assets/images/work/bubblewrap1.jpg"},
-    { id: "bubblewrap2", src: "../assets/images/work/bubblewrap2.jpg"},
-    { id: "destroying the-strucutre", src: "../assets/images/work/destroying-the-structure.jpg.jpg"},
+    { id: "bubblewrap1", src: "../assets/images/work/bubblewrap1.JPG"},
+    { id: "bubblewrap2", src: "../assets/images/work/bubblewrap2.JPG"},
+    { id: "destroying-the-structure", src: "../assets/images/work/destroying-the-structure.jpg"},
     { id: "emmerging-immersion", src: "../assets/images/work/emerging-immersion.jpg"},
-     { id: "immature-maturity", src: "../assets/images/work/immature-maturity.jpg"},
-    { id: "solidify", src: "../assets/images/work/solidify.jpg"},
-    { id: "washy", src: "../assets/images/work/washy.jpg"},
+     { id: "immature-maturity", src: "../assets/images/work/immature-maturity.JPG"},
+    { id: "solidify", src: "../assets/images/work/solidify.JPG"},
+    { id: "washy", src: "../assets/images/work/washy.JPG"},
 
   ]
 
