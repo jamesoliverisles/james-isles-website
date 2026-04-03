@@ -71,7 +71,7 @@ const galleries = {
     { id: "destroying the-strucutre", src: "../assets/images/work/destroying-the-structure.jpg.jpg"},
     { id: "emmerging-immersion", src: "../assets/images/work/emerging-immersion.jpg"},
      { id: "immature-maturity", src: "../assets/images/work/immature-maturity.jpg"},
-    { id: "solidfy", src: "../assets/images/work/solidfy.jpg"},
+    { id: "solidify", src: "../assets/images/work/solidify.jpg"},
     { id: "washy", src: "../assets/images/work/washy.jpg"},
 
   ]
