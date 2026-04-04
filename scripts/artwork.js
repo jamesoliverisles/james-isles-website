@@ -73,6 +73,7 @@ const galleries = {
      { id: "immature-maturity", src: "../assets/images/work/immature-maturity.JPG"},
     { id: "solidify", src: "../assets/images/work/solidify.JPG"},
     { id: "washy", src: "../assets/images/work/washy.JPG"},
+    { id: "childlike-discover", src: "../assets/images/work/childlike-discover.JPG"},
 
   ]
 
